@@ -1,0 +1,6 @@
+[submodule "linuxdeploy-plugin-appimage"]
+	path = linuxdeploy-plugin-appimage
+	url = https://github.com/linuxdeploy/linuxdeploy-plugin-appimage.git
+[submodule "linuxdeploy"]
+	path = linuxdeploy
+	url = https://github.com/kevinmukuna/linuxdeploy.git
