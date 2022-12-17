@@ -1,0 +1,1 @@
+# linuxdeploy-tauri-arm64
