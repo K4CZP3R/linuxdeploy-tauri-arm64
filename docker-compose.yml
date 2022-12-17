@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  base:
+    build:
+      context: .
+      dockerfile: base.Dockerfile
+    image: ghcr.io/k4czp3r/linuxdeploy-tauri-arm64:base
+  appimage-plugin:
+    build:
+      context: .
+      dockerfile: appimage-plugin.Dockerfile
+    image: ghcr.io/k4czp3r/linuxdeploy-tauri-arm64:appimage-plugin
+  linuxdeploy:
+    build:
+      context: .
+      dockerfile: linuxdeploy.Dockerfile
+    image: ghcr.io/k4czp3r/linuxdeploy-tauri-arm64:linuxdeploy
+  image:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/k4czp3r/linuxdeploy-tauri-arm64:latest
+    
